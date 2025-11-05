@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的滑动门</title>
+    <link rel="stylesheet" href="./font_zr1ltu2ceal/iconfont.css">
+    <link rel="stylesheet" href="./font_w3pd584gp8k/iconfont.css">
+    <style>
+        * {
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 仿宋;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background: azure;
+        }
+
+        .yijihezi {
+            width: 100px;
+            margin: 50px auto;
+        }
+
+        .yijiliebiao>li {
+            background-color: #c5fff9;
+            width: 150px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .erjihezi {
+            position: absolute;
+            top: 0;
+            left: 150px;
+            width: 150px;
+            background-color: #e0ffff;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .erjiliebiao>li {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .yijiliebiao>li:hover>.erjihezi {
+            display: block;
+            box-shadow: 20px 20px 20px rgb(206, 255, 251);
+            animation:butoumingdu 1s linear 1;
+        }
+        
+        @keyframes butoumingdu {
+                0%{
+                   opacity: 0;
+                }
+                100%{
+                   opacity: 1.0;
+                }                
+            }
+
+    </style>
+</head>
+
+<body>
+    <div class="yijihezi">
+        <ul class="yijiliebiao">
+            <li class="iconfont icon-tushu">
+                <a href="#">&nbsp学习类网站&nbsp</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li class="iconfont icon-fenlei1-weixuanzhong"><a href="#">内江师范学院</a></li>
+                        <li class="iconfont icon-fenlei1-weixuanzhong"><a href="#">智慧树</a></li>
+                        <li class="iconfont icon-fenlei1-weixuanzhong"><a href="#">知网</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="iconfont icon-shipin">
+                <a href="#">&nbsp视频类网站&nbsp</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li class="iconfont icon-fenlei1-weixuanzhong"><a href="#">bilibili</a></li>
+                        <li class="iconfont icon-fenlei1-weixuanzhong"><a href="#">抖音</a></li>
+                        <li class="iconfont icon-fenlei1-weixuanzhong"><a href="#">快手</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="iconfont icon-wuguan">
+                <a href="#">&nbspAI网站&nbsp</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li class="iconfont icon-fenlei1-weixuanzhong"><a href="#">deepseek</a></li>
+                        <li class="iconfont icon-fenlei1-weixuanzhong"><a href="#">kimi</a></li>
+                        <li class="iconfont icon-fenlei1-weixuanzhong"><a href="#">秘塔</a></li>
+                    </ul>
+                </div>
+            </li>
+          
+    </div>
+</body>
+
+</html>
